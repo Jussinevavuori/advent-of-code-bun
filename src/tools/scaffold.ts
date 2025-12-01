@@ -5,12 +5,23 @@ import dedent from "dedent";
 import { parseArgs } from "util";
 
 /**
+ * Use this script to scaffold a new solution directory.
+ *
+ * Run as:
+ *
+ * ```bash
+ * # Setup solution for 2025-05
+ * $ bun scaffold --date 2025-05
+ * ```
+ */
+
+/**
  * All templates to scaffold. Use {{ID}} as placeholder for solution ID.
  */
 const TEMPLATES: Record<string, string> = {
   "input.txt": "test input for {{ID}}",
   "solution.ts": dedent`
-		import { Input } from "../../utils/inputParsers";
+		import { Input } from "@/utils/inputParsers";
 
 		/**
 		 * Solution for {{ID}}.

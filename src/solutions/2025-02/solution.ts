@@ -1,4 +1,4 @@
-import { Input } from "../../utils/inputParsers";
+import { Input } from "@/utils/inputParsers";
 
 /**
  * Solution for 2025-02.

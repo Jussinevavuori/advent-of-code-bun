@@ -4,9 +4,9 @@
 	"type": "module",
 	"private": true,
 	"scripts": {
-		"solve": "bun run ./src/solve.ts",
-		"solve:watch": "bun run --hot ./src/solve.ts",
-		"setup": "bun run ./src/setup.ts"
+		"solve": "bun run ./src/tools/solve.ts",
+		"solve:watch": "bun run --hot ./src/tools/solve.ts",
+		"scaffold": "bun run ./src/tools/scaffold.ts"
 	},
 	"devDependencies": {
 		"@types/bun": "latest"

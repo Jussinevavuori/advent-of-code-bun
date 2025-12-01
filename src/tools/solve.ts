@@ -3,17 +3,20 @@ import path from "path";
 import C from "chalk";
 import { parseArgs } from "util";
 
-await main();
-
 /**
- * Run this file as
+ * Use this script to run a solution for a given date.
+ *
+ * Run as:
  *
  * ```bash
- * $ bun solve          # runs newest solution
- * $ bun solve 2023-05  # runs solution for 5th Dec 2023
- * $ bun solve:watch    # runs newest solution in watch mode
+ * $ bun solve                       # runs newest solution
+ * $ bun solve --date 2023-05        # runs solution for 5th Dec 2023
+ * $ bun solve:watch                 # runs newest solution in watch mode
+ * $ bun solve:watch --date 2023-05  # runs solution for 5th Dec 2023 in watch mode
  * ```
  */
+
+await main();
 
 /**
  * Main entry point
