@@ -31,7 +31,7 @@ const TEMPLATES: Record<string, string> = {
 		 */
 		export default async function solve(input: string) {
 			const lines = Input.toLines(input);
-			return { test: lines[0] };
+			return { part_1: 0 };
 		}
 	`,
   "solution.test.ts": dedent`
@@ -43,8 +43,8 @@ const TEMPLATES: Record<string, string> = {
 		\`.trim();
 
 		describe("{{ID}}", () => {
-		  it("works on example", async () => {
-		    expect(await solve(input)).toMatchObject({ test: "test input for {{ID}}" });
+		  it("works on example in part 1", async () => {
+		    expect(await solve(input)).toMatchObject({ part_1: 0 });
 		  });
 		});
 	`,

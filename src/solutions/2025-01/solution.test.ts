@@ -15,7 +15,10 @@ L82
 `.trim();
 
 describe("2025-01", () => {
-  it("works on example", async () => {
-    expect(await solve(input)).toMatchObject({ part_1: 3, part_2: 6 });
+  it("works on example in part 1", async () => {
+    expect(await solve(input)).toHaveProperty("part_1", 3);
+  });
+  it("works on example in part 2", async () => {
+    expect(await solve(input)).toHaveProperty("part_2", 6);
   });
 });
